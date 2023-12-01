@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function Accessories() {
   return (
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section class="text-gray-400 bg-gray-950 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap -m-4">
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">

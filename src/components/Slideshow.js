@@ -13,16 +13,30 @@ const Slideshow = () => {
 
     <Carousel showThumbs={false} autoPlay infiniteLoop interval={5000} emulateTouch>
       <Image
-        src={'/slideshow/hangingclothes(1).jpg'}
+        src={'/slideshow/hangingclothes1.jpg'}
+        className='brightness-75'
         alt='home1'
-        width={1200}
-        height={1000}
+        width={1920}
+        height={800}
         />
         <Image
-        src={'/slideshow/rampwalk.jpg'}
+        src={'/slideshow/banner-1.jpg'}
+        className='brightness-75'
         alt='home2'
-        width={1200}
-        height={1000}/>
+        width={1920}
+        height={800}/>
+        <Image
+        src={'/slideshow/banner-2.jpg'}
+        className='brightness-75'
+        alt='home2'
+        width={1920}
+        height={800}/>
+        <Image
+        src={'/slideshow/banner-3.jpg'}
+        className='brightness-75'
+        alt='home2'
+        width={1920}
+        height={800}/>
 
     </Carousel>
   )

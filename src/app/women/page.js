@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-function Tees() {
+function Women() {
   return (
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section class="text-gray-400 bg-gray-950 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -12,7 +12,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -22,7 +22,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -32,7 +32,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -42,7 +42,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -52,7 +52,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -62,7 +62,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -72,7 +72,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -82,7 +82,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -92,7 +92,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -102,7 +102,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -112,7 +112,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -122,7 +122,7 @@ function Tees() {
           <Image alt="ecommerce" class="object-cover object-center w-full h-full block" width={420} height={260} src={"https://dummyimage.com/420"}/>
         </Link>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">T-shirts</h3>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Women&apos;s Fashion</h3>
           <a class="text-white title-font text-lg font-medium cursor-pointer">The Catalyzer</a>
           <p class="mt-1">$16.00</p>
         </div>
@@ -133,4 +133,4 @@ function Tees() {
   )
 }
 
-export default Tees
+export default Women
