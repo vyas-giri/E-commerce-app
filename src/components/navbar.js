@@ -9,6 +9,7 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { hideLoading } from '@/redux/slices/cartSlice';
 import { addToCart, removeFromCart } from '@/redux/slices/cartSlice';
+import Hamburger from './HamburgerMenu';
 
 
 function Navbar() {
@@ -40,18 +41,20 @@ function Navbar() {
   }
   const ref = useRef()
   return (
-    <header class="text-gray-400 dark body-font bg-gray-950 sticky z-10">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <Link href={'/'} className='flex title-font font-medium items-center text-white mb-4 md:mb-0'>
+    <header class="text-gray-400 dark body-font bg-gray-950 fixed w-screen z-10">
+  <div class="container mx-auto flex p-5 items-center ">
+      <div className='sm:hidden'>
+        <Hamburger />
+      </div>
+    <Link href={'/'} className='flex title-font font-medium text-white sm:pr-3'>
       <span class="ml-3 text-2xl hover:text-[#59daff]">StyleSanctum</span>
     </Link>
-    <nav class="md:ml-5 flex flex-wrap items-center text-base justify-center text-center md:mr-10 lg:mr-16">
+    <nav class="md:ml-5 sm:flex flex-wrap items-center text-base justify-center text-center md:mr-10 lg:mr-16 hidden">
       <Link href={"/men"} className="relative hover:text-[#59daff] text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#59daff] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left mr-5">Men</Link>
       <Link href={"/women"} className="relative text-xl hover:text-[#59daff] w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#59daff] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left mr-5">Women</Link>
-      <Link href={"/combos"} className="relative hover:text-[#59daff] text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#59daff] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left mr-5">Combos</Link>
       <Link href={"/accessories"} className="relative hover:text-[#59daff] text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#59daff] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left mr-5">Accessories</Link>
     </nav>
-    <button onClick={toggleCart} class="inline-flex items-center top-4 absolute right-4 bg-gray-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded-full hover:text-[#59daff] text-base mr-3"><AiOutlineShoppingCart size={'2em'}/></button>
+    <button onClick={toggleCart} class="inline-flex items-center top-4 absolute right-4 bg-gray-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded-full hover:text-[#59daff] text-base pl-3 sm:mr-3"><AiOutlineShoppingCart size={'2em'}/>{cartItems.length === 0 ? null : (<span>{cartItems.length}</span>)}</button>
   </div>
 
   <div ref={ref} className='sidebar w-80 h-[100vh] absolute top-0 right-0 bg-gray-900 p-7 text-white transform transition-transform translate-x-full'>
@@ -87,7 +90,7 @@ function Navbar() {
                     addToCartHandler(item, Number(e.target.value))
                   }
                 >
-                  {item.qty > 1 ?(<AiOutlineMinusCircle onClick={() => {
+                  {item.qty > 1 ? (<AiOutlineMinusCircle onClick={() => {
                     {
                       let newQty = qty
                       if (true) {
@@ -123,9 +126,9 @@ function Navbar() {
                 </div>
                 </div>))}
                 <div className='flex items-center text-md mt-7 space-x-3 justify-center text-gray-400 border-b-2 border-blue-500 p-3 mb-1'>
-    <button onClick={() => removeFromCartHandler(item.id)} id='clearcartbtn' className='flex py-3 px-2 text-sm border border-blue-500 hover:text-white hover:bg-cyan-950 bg-gray-900 rounded-lg'>Clear Cart</button>
-    <Link href={'/checkout'}><button className='flex py-3 px-3 border border-blue-500 hover:bg-[#59daff] bg-gray-900 rounded-lg text-sm hover:text-black'><BsBagCheck className='m-1 mr-1'/> Checkout</button></Link>
-    </div>
+                    <button id='clearcartbtn' className='flex py-3 px-2 text-sm border border-blue-500 hover:text-white hover:bg-cyan-950 bg-gray-900 rounded-lg'>Clear Cart</button>
+                  <Link href={'/checkout'}><button className='flex py-3 px-3 border border-blue-500 hover:bg-[#59daff] bg-gray-900 rounded-lg text-sm hover:text-black'><BsBagCheck className='m-1 mr-1'/> Checkout</button></Link>
+                </div>
     <div className='p-2 flex justify-between'>
     <div className='font-bold text-[#59daff] underline underline-offset-2'>Subtotal</div>
     <div className='text-white'>${itemsPrice}</div>

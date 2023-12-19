@@ -9,7 +9,6 @@ import AddToCart from "@/components/AddToCart"
 
 export default function Page({ params }) {
   const { products } = data;
-  console.log(params.slug)
   const product = products.find(x => x.id === params.slug)
   const [service, setService] = useState()
   const [pin, setPin] = useState()
