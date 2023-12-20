@@ -125,14 +125,14 @@ function Navbar() {
                   }} className='cursor-pointer'/>
                 </div>
                 </div>))}
-                <div className='flex items-center text-md mt-7 space-x-3 justify-center text-gray-400 border-b-2 border-blue-500 p-3 mb-1'>
-                    <button id='clearcartbtn' className='flex py-3 px-2 text-sm border border-blue-500 hover:text-white hover:bg-cyan-950 bg-gray-900 rounded-lg'>Clear Cart</button>
-                  <Link href={'/checkout'}><button className='flex py-3 px-3 border border-blue-500 hover:bg-[#59daff] bg-gray-900 rounded-lg text-sm hover:text-black'><BsBagCheck className='m-1 mr-1'/> Checkout</button></Link>
+                <div className='flex items-center text-md mt-7 space-x-3 justify-center flex-col text-gray-400 border-t-2 border-blue-500 p-3 mb-1 space-y-3 absolute bottom-0'>
+                  <div className='p-2 flex justify-between bottom-2 space-x-24'>
+                    <div className='font-bold text-[#59daff] underline underline-offset-2'>Subtotal</div>
+                    <div className='text-white'>${itemsPrice}</div>
+                  </div>
+                  <Link href={'/checkout'}><button className='flex py-3 px-3 border border-blue-500 hover:bg-[#59daff] bg-gray-900 rounded-lg text-sm hover:text-black'><BsBagCheck className='m-1 mr-1'/>Checkout</button></Link>
+                  
                 </div>
-    <div className='p-2 flex justify-between'>
-    <div className='font-bold text-[#59daff] underline underline-offset-2'>Subtotal</div>
-    <div className='text-white'>${itemsPrice}</div>
-    </div>
     </div>
     </>
       )}

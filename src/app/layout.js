@@ -11,7 +11,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: "StyleSanctum",
-  description: "Style it your way!"
+  description: "Style it your way!",
+  footer: [
+    { name: "Home", href: "/" },
+  ],
 }
 
 export default function RootLayout({ children }) {
